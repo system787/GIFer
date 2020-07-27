@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE4BBD9024CF2E9700F0C509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBD8F24CF2E9700F0C509 /* AppDelegate.swift */; };
+		BE4BBD9224CF2E9700F0C509 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBD9124CF2E9700F0C509 /* SceneDelegate.swift */; };
+		BE4BBD9424CF2E9700F0C509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBD9324CF2E9700F0C509 /* ViewController.swift */; };
+		BE4BBD9724CF2E9700F0C509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4BBD9524CF2E9700F0C509 /* Main.storyboard */; };
+		BE4BBD9A24CF2E9700F0C509 /* GIFer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBD9824CF2E9700F0C509 /* GIFer.xcdatamodeld */; };
+		BE4BBD9C24CF2E9900F0C509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4BBD9B24CF2E9900F0C509 /* Assets.xcassets */; };
+		BE4BBD9F24CF2E9900F0C509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4BBD9D24CF2E9900F0C509 /* LaunchScreen.storyboard */; };
+		BE4BBDAA24CF2E9900F0C509 /* GIFerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDA924CF2E9900F0C509 /* GIFerTests.swift */; };
+		BE4BBDB524CF2E9900F0C509 /* GIFerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDB424CF2E9900F0C509 /* GIFerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE4BBDA624CF2E9900F0C509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE4BBD8424CF2E9700F0C509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE4BBD8B24CF2E9700F0C509;
+			remoteInfo = GIFer;
+		};
+		BE4BBDB124CF2E9900F0C509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE4BBD8424CF2E9700F0C509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE4BBD8B24CF2E9700F0C509;
+			remoteInfo = GIFer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE4BBD8C24CF2E9700F0C509 /* GIFer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4BBD8F24CF2E9700F0C509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE4BBD9124CF2E9700F0C509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BE4BBD9324CF2E9700F0C509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE4BBD9624CF2E9700F0C509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE4BBD9924CF2E9700F0C509 /* GIFer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GIFer.xcdatamodel; sourceTree = "<group>"; };
+		BE4BBD9B24CF2E9900F0C509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE4BBD9E24CF2E9900F0C509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE4BBDA024CF2E9900F0C509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4BBDA524CF2E9900F0C509 /* GIFerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4BBDA924CF2E9900F0C509 /* GIFerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFerTests.swift; sourceTree = "<group>"; };
+		BE4BBDAB24CF2E9900F0C509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4BBDB024CF2E9900F0C509 /* GIFerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4BBDB424CF2E9900F0C509 /* GIFerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFerUITests.swift; sourceTree = "<group>"; };
+		BE4BBDB624CF2E9900F0C509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE4BBD8924CF2E9700F0C509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4BBDA224CF2E9900F0C509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4BBDAD24CF2E9900F0C509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE4BBD8324CF2E9700F0C509 = {
+			isa = PBXGroup;
+			children = (
+				BE4BBD8E24CF2E9700F0C509 /* GIFer */,
+				BE4BBDA824CF2E9900F0C509 /* GIFerTests */,
+				BE4BBDB324CF2E9900F0C509 /* GIFerUITests */,
+				BE4BBD8D24CF2E9700F0C509 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE4BBD8D24CF2E9700F0C509 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE4BBD8C24CF2E9700F0C509 /* GIFer.app */,
+				BE4BBDA524CF2E9900F0C509 /* GIFerTests.xctest */,
+				BE4BBDB024CF2E9900F0C509 /* GIFerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE4BBD8E24CF2E9700F0C509 /* GIFer */ = {
+			isa = PBXGroup;
+			children = (
+				BE4BBD8F24CF2E9700F0C509 /* AppDelegate.swift */,
+				BE4BBD9124CF2E9700F0C509 /* SceneDelegate.swift */,
+				BE4BBD9324CF2E9700F0C509 /* ViewController.swift */,
+				BE4BBD9524CF2E9700F0C509 /* Main.storyboard */,
+				BE4BBD9B24CF2E9900F0C509 /* Assets.xcassets */,
+				BE4BBD9D24CF2E9900F0C509 /* LaunchScreen.storyboard */,
+				BE4BBDA024CF2E9900F0C509 /* Info.plist */,
+				BE4BBD9824CF2E9700F0C509 /* GIFer.xcdatamodeld */,
+			);
+			path = GIFer;
+			sourceTree = "<group>";
+		};
+		BE4BBDA824CF2E9900F0C509 /* GIFerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE4BBDA924CF2E9900F0C509 /* GIFerTests.swift */,
+				BE4BBDAB24CF2E9900F0C509 /* Info.plist */,
+			);
+			path = GIFerTests;
+			sourceTree = "<group>";
+		};
+		BE4BBDB324CF2E9900F0C509 /* GIFerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE4BBDB424CF2E9900F0C509 /* GIFerUITests.swift */,
+				BE4BBDB624CF2E9900F0C509 /* Info.plist */,
+			);
+			path = GIFerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE4BBD8B24CF2E9700F0C509 /* GIFer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4BBDB924CF2E9900F0C509 /* Build configuration list for PBXNativeTarget "GIFer" */;
+			buildPhases = (
+				BE4BBD8824CF2E9700F0C509 /* Sources */,
+				BE4BBD8924CF2E9700F0C509 /* Frameworks */,
+				BE4BBD8A24CF2E9700F0C509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIFer;
+			productName = GIFer;
+			productReference = BE4BBD8C24CF2E9700F0C509 /* GIFer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE4BBDA424CF2E9900F0C509 /* GIFerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4BBDBC24CF2E9900F0C509 /* Build configuration list for PBXNativeTarget "GIFerTests" */;
+			buildPhases = (
+				BE4BBDA124CF2E9900F0C509 /* Sources */,
+				BE4BBDA224CF2E9900F0C509 /* Frameworks */,
+				BE4BBDA324CF2E9900F0C509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE4BBDA724CF2E9900F0C509 /* PBXTargetDependency */,
+			);
+			name = GIFerTests;
+			productName = GIFerTests;
+			productReference = BE4BBDA524CF2E9900F0C509 /* GIFerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE4BBDAF24CF2E9900F0C509 /* GIFerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4BBDBF24CF2E9900F0C509 /* Build configuration list for PBXNativeTarget "GIFerUITests" */;
+			buildPhases = (
+				BE4BBDAC24CF2E9900F0C509 /* Sources */,
+				BE4BBDAD24CF2E9900F0C509 /* Frameworks */,
+				BE4BBDAE24CF2E9900F0C509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE4BBDB224CF2E9900F0C509 /* PBXTargetDependency */,
+			);
+			name = GIFerUITests;
+			productName = GIFerUITests;
+			productReference = BE4BBDB024CF2E9900F0C509 /* GIFerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE4BBD8424CF2E9700F0C509 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Vincent Hoang";
+				TargetAttributes = {
+					BE4BBD8B24CF2E9700F0C509 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					BE4BBDA424CF2E9900F0C509 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BE4BBD8B24CF2E9700F0C509;
+					};
+					BE4BBDAF24CF2E9900F0C509 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BE4BBD8B24CF2E9700F0C509;
+					};
+				};
+			};
+			buildConfigurationList = BE4BBD8724CF2E9700F0C509 /* Build configuration list for PBXProject "GIFer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE4BBD8324CF2E9700F0C509;
+			productRefGroup = BE4BBD8D24CF2E9700F0C509 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE4BBD8B24CF2E9700F0C509 /* GIFer */,
+				BE4BBDA424CF2E9900F0C509 /* GIFerTests */,
+				BE4BBDAF24CF2E9900F0C509 /* GIFerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE4BBD8A24CF2E9700F0C509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4BBD9F24CF2E9900F0C509 /* LaunchScreen.storyboard in Resources */,
+				BE4BBD9C24CF2E9900F0C509 /* Assets.xcassets in Resources */,
+				BE4BBD9724CF2E9700F0C509 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4BBDA324CF2E9900F0C509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4BBDAE24CF2E9900F0C509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE4BBD8824CF2E9700F0C509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4BBD9424CF2E9700F0C509 /* ViewController.swift in Sources */,
+				BE4BBD9024CF2E9700F0C509 /* AppDelegate.swift in Sources */,
+				BE4BBD9224CF2E9700F0C509 /* SceneDelegate.swift in Sources */,
+				BE4BBD9A24CF2E9700F0C509 /* GIFer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4BBDA124CF2E9900F0C509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4BBDAA24CF2E9900F0C509 /* GIFerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4BBDAC24CF2E9900F0C509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4BBDB524CF2E9900F0C509 /* GIFerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE4BBDA724CF2E9900F0C509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE4BBD8B24CF2E9700F0C509 /* GIFer */;
+			targetProxy = BE4BBDA624CF2E9900F0C509 /* PBXContainerItemProxy */;
+		};
+		BE4BBDB224CF2E9900F0C509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE4BBD8B24CF2E9700F0C509 /* GIFer */;
+			targetProxy = BE4BBDB124CF2E9900F0C509 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE4BBD9524CF2E9700F0C509 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4BBD9624CF2E9700F0C509 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE4BBD9D24CF2E9900F0C509 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4BBD9E24CF2E9900F0C509 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE4BBDB724CF2E9900F0C509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE4BBDB824CF2E9900F0C509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE4BBDBA24CF2E9900F0C509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GIFer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = system787.GIFer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE4BBDBB24CF2E9900F0C509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GIFer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = system787.GIFer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE4BBDBD24CF2E9900F0C509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GIFerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = system787.GIFerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GIFer.app/GIFer";
+			};
+			name = Debug;
+		};
+		BE4BBDBE24CF2E9900F0C509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GIFerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = system787.GIFerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GIFer.app/GIFer";
+			};
+			name = Release;
+		};
+		BE4BBDC024CF2E9900F0C509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GIFerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = system787.GIFerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GIFer;
+			};
+			name = Debug;
+		};
+		BE4BBDC124CF2E9900F0C509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GIFerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = system787.GIFerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GIFer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE4BBD8724CF2E9700F0C509 /* Build configuration list for PBXProject "GIFer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4BBDB724CF2E9900F0C509 /* Debug */,
+				BE4BBDB824CF2E9900F0C509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4BBDB924CF2E9900F0C509 /* Build configuration list for PBXNativeTarget "GIFer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4BBDBA24CF2E9900F0C509 /* Debug */,
+				BE4BBDBB24CF2E9900F0C509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4BBDBC24CF2E9900F0C509 /* Build configuration list for PBXNativeTarget "GIFerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4BBDBD24CF2E9900F0C509 /* Debug */,
+				BE4BBDBE24CF2E9900F0C509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4BBDBF24CF2E9900F0C509 /* Build configuration list for PBXNativeTarget "GIFerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4BBDC024CF2E9900F0C509 /* Debug */,
+				BE4BBDC124CF2E9900F0C509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE4BBD9824CF2E9700F0C509 /* GIFer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE4BBD9924CF2E9700F0C509 /* GIFer.xcdatamodel */,
+			);
+			currentVersion = BE4BBD9924CF2E9700F0C509 /* GIFer.xcdatamodel */;
+			path = GIFer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE4BBD8424CF2E9700F0C509 /* Project object */;
+}
