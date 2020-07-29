@@ -91,7 +91,7 @@
             </objects>
             <point key="canvasLocation" x="-1781" y="-60"/>
         </scene>
-        <!--Create View Controller-->
+        <!--Select Live Photo-->
         <scene sceneID="TCC-iI-F2m">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BHR-DG-eqK" customClass="CreateViewController" customModule="GIFer" customModuleProvider="target" sceneMemberID="viewController">
@@ -153,13 +153,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MGa-hW-EM4"/>
                     </view>
-                    <navigationItem key="navigationItem" id="R1n-Qa-wlw">
+                    <navigationItem key="navigationItem" title="Select Live Photo" id="R1n-Qa-wlw">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="Jhn-hb-r63">
                             <connections>
                                 <action selector="backButtonPressed:" destination="BHR-DG-eqK" id="uXg-C0-gsL"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Use Photo" id="RnG-Qk-97Q"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Use Photo" id="RnG-Qk-97Q">
+                            <connections>
+                                <segue destination="55L-Yg-rm5" kind="show" id="uum-tJ-eq0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="backButton" destination="Jhn-hb-r63" id="AwZ-Ss-c87"/>
@@ -178,15 +182,16 @@
             <objects>
                 <viewController id="55L-Yg-rm5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="or6-09-tZY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="AoN-06-syp"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cf0-Be-iF5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fbe-k1-91y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080" y="-232"/>
+            <point key="canvasLocation" x="1099" y="-230"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nLa-4q-uvA">

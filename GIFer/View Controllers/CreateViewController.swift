@@ -87,9 +87,8 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
                                         
                                         self.photoImageView.addSubview(livePhotoView)
                                         
-                                        if !self.usePhotoButton.isEnabled {
-                                            self.usePhotoButton.isEnabled = true
-                                        }
+                                        self.usePhotoButton.isEnabled = true
+                                        
                                     }
         })
     }
