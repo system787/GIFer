@@ -3,4 +3,178 @@
    uuid = "92B3FDF5-9FE2-4DE5-BA7E-1EAB9F83F7A3"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50570DA3-6A75-4CE3-A2B8-6798E85BF554"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/View Controllers/CreateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "CreateViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "50570DA3-6A75-4CE3-A2B8-6798E85BF554 - 2d92381030aba2cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GIFer.CreateViewController.images.getter : Swift.Array&lt;__C.PHLivePhoto&gt;"
+                  moduleName = "GIFer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/GIFer/View%20Controllers/CreateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "50570DA3-6A75-4CE3-A2B8-6798E85BF554 - 806f51965e0d74c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GIFer.CreateViewController.images.setter : Swift.Array&lt;__C.PHLivePhoto&gt;"
+                  moduleName = "GIFer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/GIFer/View%20Controllers/CreateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "50570DA3-6A75-4CE3-A2B8-6798E85BF554 - 8b43c5e66e40772"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GIFer.CreateViewController.images.modify : Swift.Array&lt;__C.PHLivePhoto&gt;"
+                  moduleName = "GIFer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/GIFer/View%20Controllers/CreateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "50570DA3-6A75-4CE3-A2B8-6798E85BF554 - 4b77f44b01967a94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GIFer.CreateViewController.images.modify : Swift.Array&lt;__C.PHLivePhoto&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "GIFer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/GIFer/View%20Controllers/CreateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "50570DA3-6A75-4CE3-A2B8-6798E85BF554 - 661b95dfbff527ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GIFer.CreateViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GIFer.CreateViewController"
+                  moduleName = "GIFer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/GIFer/View%20Controllers/CreateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "888">
+               </Location>
+               <Location
+                  uuid = "50570DA3-6A75-4CE3-A2B8-6798E85BF554 - 714f6d5f6ed5311f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GIFer.CreateViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GIFer.CreateViewController&gt;"
+                  moduleName = "GIFer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/GIFer/View%20Controllers/CreateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "823">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F20475C-BE57-4BF2-B9BA-BABAFBEE80F0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/View Controllers/CreateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "getAssetThumbnail(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8406EB6-48BF-42AF-A610-05AA97D0099D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/View Controllers/CreateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getAssetThumbnail(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1AAE168-541E-4C03-A8E2-8E1B4D58F61F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/View Controllers/CreateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchLivePhotos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DA99EAC-68D4-456E-8309-B407806F0CF3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/View Controllers/CreateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchLivePhotos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

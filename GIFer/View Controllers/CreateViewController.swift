@@ -16,7 +16,7 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet weak var photoImageView: PHLivePhotoView!
     @IBOutlet weak var backButton: UIBarButtonItem!
     
-    @IBOutlet weak var photoCollectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var livePhoto: PHLivePhoto?
     var imagePicker = UIImagePickerController()
@@ -25,31 +25,28 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoCollectionView.delegate = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
         
         fetchLivePhotos()
     }
     
     // MARK: - Photo CollectionView
     private func fetchLivePhotos() {
-        
         let fetchOptions = PHFetchOptions()
-        fetchOptions.sortDescriptors = [NSSortDescriptor(key:"creationDate", ascending: false)]
-        fetchOptions.predicate = NSPredicate(format: "mediaSubtype = %d", PHAssetMediaSubtype.photoLive.rawValue)
+        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
         
+        fetchOptions.predicate = NSPredicate(format: "(mediaSubtype & %d) != 0", PHAssetMediaSubtype.photoLive.rawValue)
         
-        if let userLibraryCollection = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .smartAlbumLivePhotos, options: nil).firstObject {
-            
-            let collection = PHAsset.fetchAssets(in: userLibraryCollection, options: fetchOptions)
-            collection.enumerateObjects({ asset, _, _ in
-                self.getAssetThumbnail(asset)
-            })
-        } else {
-            let collection = PHAsset.fetchAssets(with: .image, options: fetchOptions)
-            
-            collection.enumerateObjects({ asset, _, _ in
-                self.getAssetThumbnail(asset)
-            })
+        let fetchResults = PHAsset.fetchAssets(with: fetchOptions)
+        
+        fetchResults.enumerateObjects({ asset, _, _ in
+            self.getAssetThumbnail(asset)
+        })
+        
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
         }
     }
     
@@ -67,30 +64,26 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
                                     self.images.append(result)
                                 }
         })
+        
     }
     
     // MARK: - Photo CollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCell", for: indexPath) as? CreateCollectionViewCell else {
-            return UICollectionViewCell()
-        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCell", for: indexPath) as! CreateCollectionViewCell
         
-        let selectedImage = images[indexPath.row]
+        let selectedImage = images[indexPath.item]
         
         cell.setLivePhoto(livePhoto: selectedImage)
-        
-//        let requestOptions = PHImageRequestOptions()
-//        requestOptions.isSynchronous = true
         
         return cell
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        1
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        images.count
+        return images.count
     }
     
     // MARK: - IBActions
