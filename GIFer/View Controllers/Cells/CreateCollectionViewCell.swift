@@ -15,12 +15,16 @@ class CreateCollectionViewCell: UICollectionViewCell {
 //    var livePhoto: PHLivePhoto?
     
     func setLivePhoto(livePhoto: PHLivePhoto) {
+        for view in self.contentView.subviews {
+            view.removeFromSuperview()
+        }
+        
         let livePhotoView: PHLivePhotoView = PHLivePhotoView(frame: self.contentView.bounds)
 
         livePhotoView.contentMode = .scaleAspectFill
         livePhotoView.livePhoto = livePhoto
+        livePhotoView.isUserInteractionEnabled = false
 
         self.contentView.addSubview(livePhotoView)
-        self.contentView.sendSubviewToBack(livePhotoView)
     }
 }

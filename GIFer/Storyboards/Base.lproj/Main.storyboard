@@ -159,12 +159,14 @@
                                 <action selector="backButtonPressed:" destination="BHR-DG-eqK" id="uXg-C0-gsL"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Use Photo" id="RnG-Qk-97Q"/>
                     </navigationItem>
                     <connections>
                         <outlet property="backButton" destination="Jhn-hb-r63" id="AwZ-Ss-c87"/>
                         <outlet property="collectionView" destination="ePx-dU-qFx" id="2yK-Re-bgU"/>
                         <outlet property="photoImageView" destination="Z1G-55-67U" id="yjI-hb-Y9l"/>
                         <outlet property="promptView" destination="w3a-cw-mVN" id="Jhv-5L-mnK"/>
+                        <outlet property="usePhotoButton" destination="RnG-Qk-97Q" id="D0F-0x-0WO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFf-65-Bxd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

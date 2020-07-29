@@ -14,8 +14,8 @@
             filePath = "GIFer/View Controllers/CreateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "CreateViewController"
             landmarkType = "3">
             <Locations>
@@ -125,22 +125,6 @@
             startingLineNumber = "52"
             endingLineNumber = "52"
             landmarkName = "getAssetThumbnail(_:for:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6DA99EAC-68D4-456E-8309-B407806F0CF3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GIFer/View Controllers/CreateViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "fetchLivePhotos()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

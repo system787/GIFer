@@ -17,6 +17,7 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var promptView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var usePhotoButton: UIBarButtonItem!
     
     var livePhoto: PHLivePhoto?
     var imagePicker = UIImagePickerController()
@@ -30,19 +31,18 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
         collectionView.dataSource = self
         collectionView.isPagingEnabled = true
         
-        
         fetchLivePhotos()
     }
     
     // MARK: - Photo CollectionView
     private func fetchLivePhotos() {
         let fetchOptions = PHFetchOptions()
+        fetchOptions.predicate = NSPredicate(format: "mediaSubtype = %d", PHAssetMediaSubtype.photoLive.rawValue)
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
         
-        fetchOptions.predicate = NSPredicate(format: "(mediaSubtype & %d) != 0", PHAssetMediaSubtype.photoLive.rawValue)
+        let library = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .smartAlbumLivePhotos, options: nil).firstObject
         
-        fetchResults = PHAsset.fetchAssets(with: fetchOptions)
-        
+        fetchResults = PHAsset.fetchAssets(in: library!, options: fetchOptions)
     }
     
     private func getAssetThumbnail(_ asset: PHAsset, for cell: CreateCollectionViewCell) {
@@ -81,9 +81,15 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
                                         livePhotoView.livePhoto = result
                                         
                                         livePhotoView.contentMode = .scaleAspectFit
-                                        livePhotoView.isMuted = true
+                                        livePhotoView.isMuted = false
+                                        
+                                        livePhotoView.startPlayback(with: .full)
                                         
                                         self.photoImageView.addSubview(livePhotoView)
+                                        
+                                        if !self.usePhotoButton.isEnabled {
+                                            self.usePhotoButton.isEnabled = true
+                                        }
                                     }
         })
     }
@@ -96,11 +102,12 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-            
-        cell.tag = indexPath.item
+        let selectedAsset = fetchResults.object(at: indexPath.item)
+//        DispatchQueue.global(qos: .userInteractive).async {
+//            self.getAssetThumbnail(selectedAsset, for: cell as! CreateCollectionViewCell)
+//        }
         
-        let selectedAsset = fetchResults.object(at: cell.tag)
-            getAssetThumbnail(selectedAsset, for: cell as! CreateCollectionViewCell)
+        getAssetThumbnail(selectedAsset, for: cell as! CreateCollectionViewCell)
     }
     
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
