@@ -22,11 +22,13 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
     var imagePicker = UIImagePickerController()
     
     var images: [PHLivePhoto] = []
+    var fetchResults: PHFetchResult<PHAsset> = PHFetchResult()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.isPagingEnabled = true
         
         
         fetchLivePhotos()
@@ -39,13 +41,11 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         fetchOptions.predicate = NSPredicate(format: "(mediaSubtype & %d) != 0", PHAssetMediaSubtype.photoLive.rawValue)
         
-        let fetchResults = PHAsset.fetchAssets(with: fetchOptions)
-        fetchResults.enumerateObjects({ asset, _, _ in
-            self.getAssetThumbnail(asset)
-        })
+        fetchResults = PHAsset.fetchAssets(with: fetchOptions)
+        
     }
     
-    private func getAssetThumbnail(_ asset: PHAsset){
+    private func getAssetThumbnail(_ asset: PHAsset, for cell: CreateCollectionViewCell) {
         let options = PHLivePhotoRequestOptions()
         let manager = PHImageManager.default()
         
@@ -53,27 +53,58 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
                              targetSize: CGSize(width: 80.0, height: 80.0),
                              contentMode: .aspectFit,
                              options: options,
-                             resultHandler: { (result, info) -> Void in
+                             resultHandler: { result, _ -> Void in
                                 
                                 if let result = result {
-                                    DispatchQueue.main.async {
-                                        self.images.append(result)
-                                        self.collectionView.reloadData()
-                                    }
+                                    cell.setLivePhoto(livePhoto: result)
                                 }
         })
         
+    }
+    
+    private func getAssetLarge(_ asset: PHAsset) {
+        let options = PHLivePhotoRequestOptions()
+        let manager = PHImageManager.default()
+        
+        manager.requestLivePhoto(for: asset,
+                                 targetSize: CGSize(width: asset.pixelWidth, height: asset.pixelHeight),
+                                 contentMode: .aspectFit,
+                                 options: options,
+                                 resultHandler: { result, _ -> Void in
+                                    if let result = result {
+                                        
+                                        for view in self.photoImageView.subviews {
+                                            view.removeFromSuperview()
+                                        }
+                                        
+                                        let livePhotoView = PHLivePhotoView.init(frame: self.photoImageView.bounds)
+                                        livePhotoView.livePhoto = result
+                                        
+                                        livePhotoView.contentMode = .scaleAspectFit
+                                        livePhotoView.isMuted = true
+                                        
+                                        self.photoImageView.addSubview(livePhotoView)
+                                    }
+        })
     }
     
     // MARK: - Photo CollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCell", for: indexPath) as! CreateCollectionViewCell
         
-        let selectedImage = images[indexPath.item]
-        
-        cell.setLivePhoto(livePhoto: selectedImage)
-        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+            
+        cell.tag = indexPath.item
+        
+        let selectedAsset = fetchResults.object(at: cell.tag)
+            getAssetThumbnail(selectedAsset, for: cell as! CreateCollectionViewCell)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -81,23 +112,13 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count > 20 ? 20 : images.count
+        return fetchResults.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-        let image = images[indexPath.item]
+        let selectedAsset = fetchResults.object(at: indexPath.item)
         
-        for view in photoImageView.subviews {
-            view.removeFromSuperview()
-        }
-        
-        let livePhotoView = PHLivePhotoView.init(frame: photoImageView.bounds)
-        livePhotoView.livePhoto = image
-        
-        livePhotoView.contentMode = .scaleAspectFit
-        livePhotoView.isMuted = true
-        
-        photoImageView.addSubview(livePhotoView)
+        getAssetLarge(selectedAsset)
     }
     
     // MARK: - IBActions
