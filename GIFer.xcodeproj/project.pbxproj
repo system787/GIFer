@@ -19,6 +19,7 @@
 		BE4BBDC824CFA98400F0C509 /* RoundButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDC724CFA98400F0C509 /* RoundButtons.swift */; };
 		BE4BBDCB24CFD78500F0C509 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCA24CFD78500F0C509 /* CreateViewController.swift */; };
 		BE4BBDCE24D14E9700F0C509 /* CreateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCD24D14E9700F0C509 /* CreateCollectionViewCell.swift */; };
+		BE4BBDD024D1F75400F0C509 /* CreateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCF24D1F75400F0C509 /* CreateDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		BE4BBDC724CFA98400F0C509 /* RoundButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtons.swift; sourceTree = "<group>"; };
 		BE4BBDCA24CFD78500F0C509 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		BE4BBDCD24D14E9700F0C509 /* CreateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE4BBDCF24D1F75400F0C509 /* CreateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				BE4BBDCC24D14E8100F0C509 /* Cells */,
 				BE4BBD9324CF2E9700F0C509 /* HomeViewController.swift */,
 				BE4BBDCA24CFD78500F0C509 /* CreateViewController.swift */,
+				BE4BBDCF24D1F75400F0C509 /* CreateDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			files = (
 				BE4BBDCE24D14E9700F0C509 /* CreateCollectionViewCell.swift in Sources */,
 				BE4BBD9424CF2E9700F0C509 /* HomeViewController.swift in Sources */,
+				BE4BBDD024D1F75400F0C509 /* CreateDetailViewController.swift in Sources */,
 				BE4BBD9024CF2E9700F0C509 /* AppDelegate.swift in Sources */,
 				BE4BBDCB24CFD78500F0C509 /* CreateViewController.swift in Sources */,
 				BE4BBD9224CF2E9700F0C509 /* SceneDelegate.swift in Sources */,
