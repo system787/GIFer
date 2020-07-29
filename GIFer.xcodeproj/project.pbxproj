@@ -18,6 +18,7 @@
 		BE4BBDB524CF2E9900F0C509 /* GIFerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDB424CF2E9900F0C509 /* GIFerUITests.swift */; };
 		BE4BBDC824CFA98400F0C509 /* RoundButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDC724CFA98400F0C509 /* RoundButtons.swift */; };
 		BE4BBDCB24CFD78500F0C509 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCA24CFD78500F0C509 /* CreateViewController.swift */; };
+		BE4BBDCE24D14E9700F0C509 /* CreateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCD24D14E9700F0C509 /* CreateCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BE4BBDB624CF2E9900F0C509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE4BBDC724CFA98400F0C509 /* RoundButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtons.swift; sourceTree = "<group>"; };
 		BE4BBDCA24CFD78500F0C509 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		BE4BBDCD24D14E9700F0C509 /* CreateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		BE4BBDC424CFA94800F0C509 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BE4BBDCC24D14E8100F0C509 /* Cells */,
 				BE4BBD9324CF2E9700F0C509 /* HomeViewController.swift */,
 				BE4BBDCA24CFD78500F0C509 /* CreateViewController.swift */,
 			);
@@ -183,6 +186,14 @@
 				BE4BBD9D24CF2E9900F0C509 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BE4BBDCC24D14E8100F0C509 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BE4BBDCD24D14E9700F0C509 /* CreateCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4BBDCE24D14E9700F0C509 /* CreateCollectionViewCell.swift in Sources */,
 				BE4BBD9424CF2E9700F0C509 /* HomeViewController.swift in Sources */,
 				BE4BBD9024CF2E9700F0C509 /* AppDelegate.swift in Sources */,
 				BE4BBDCB24CFD78500F0C509 /* CreateViewController.swift in Sources */,
@@ -495,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4ZABLHUH8;
 				INFOPLIST_FILE = GIFer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -512,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4ZABLHUH8;
 				INFOPLIST_FILE = GIFer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

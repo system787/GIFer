@@ -108,22 +108,27 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-dU-qFx">
                                 <rect key="frame" x="0.0" y="296" width="320" height="252"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gyH-pz-ap8">
-                                    <size key="itemSize" width="128" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Bu0-Sb-41c">
+                                    <size key="itemSize" width="80" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pFM-oh-CPK">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="viewCell" id="pFM-oh-CPK" customClass="CreateCollectionViewCell" customModule="GIFer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1g7-bx-AUu">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BHR-DG-eqK" id="EPf-5o-fBS"/>
+                                    <outlet property="delegate" destination="BHR-DG-eqK" id="AWi-wc-c16"/>
+                                    <outlet property="prefetchDataSource" destination="BHR-DG-eqK" id="h5n-3v-DNd"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -139,9 +144,15 @@
                         <viewLayoutGuide key="safeArea" id="MGa-hW-EM4"/>
                     </view>
                     <navigationItem key="navigationItem" id="R1n-Qa-wlw">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Jhn-hb-r63"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Jhn-hb-r63">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="BHR-DG-eqK" id="uXg-C0-gsL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="backButton" destination="Jhn-hb-r63" id="AwZ-Ss-c87"/>
+                        <outlet property="photoCollectionView" destination="ePx-dU-qFx" id="2yK-Re-bgU"/>
                         <outlet property="photoImageView" destination="5J0-og-NCG" id="hVc-KW-Yzy"/>
                     </connections>
                 </viewController>
