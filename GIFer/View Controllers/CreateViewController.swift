@@ -59,7 +59,6 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
                                     cell.setLivePhoto(livePhoto: result)
                                 }
         })
-        
     }
     
     private func getAssetLarge(_ asset: PHAsset) {
@@ -77,10 +76,15 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
                                             view.removeFromSuperview()
                                         }
                                         
-                                        let livePhotoView = PHLivePhotoView.init(frame: self.photoImageView.bounds)
-                                        livePhotoView.livePhoto = result
+                                        self.livePhoto = result
                                         
-                                        livePhotoView.contentMode = .scaleAspectFit
+                                        let livePhotoView = PHLivePhotoView.init(frame: self.photoImageView.bounds)
+                                        livePhotoView.livePhoto = self.livePhoto
+                                        
+                                        print("Width \(self.photoImageView.bounds.width)")
+                                        print("Height \(self.photoImageView.bounds.height)")
+                                        
+                                        livePhotoView.contentMode = .scaleAspectFill
                                         livePhotoView.isMuted = false
                                         
                                         livePhotoView.startPlayback(with: .full)
@@ -88,7 +92,6 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
                                         self.photoImageView.addSubview(livePhotoView)
                                         
                                         self.usePhotoButton.isEnabled = true
-                                        
                                     }
         })
     }
@@ -131,24 +134,18 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
-    
-//    @IBAction func collectionViewCellTapped(_ sender: UICollectionView) {
-//        print("Tap")
-//        guard let indexPath = sender.indexPathsForSelectedItems else {
-//            print("tap failed")
-//            return
-//        }
-//        
-//        print("tap success")
-//        
-//        if let index = indexPath.first {
-//            let image = images[index.item]
-//            
-//            photoImageView.livePhoto = image
-//        }
-//    }
 
-    // MARK: - PhotoKit
-    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if segue.identifier == "createDetailSegue" {
+            guard let vc = segue.destination as? CreateDetailViewController else {
+                return
+            }
+            
+            vc.livePhoto = self.livePhoto
+        }
+    }
     
 }

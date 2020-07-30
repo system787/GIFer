@@ -20,6 +20,7 @@
 		BE4BBDCB24CFD78500F0C509 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCA24CFD78500F0C509 /* CreateViewController.swift */; };
 		BE4BBDCE24D14E9700F0C509 /* CreateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCD24D14E9700F0C509 /* CreateCollectionViewCell.swift */; };
 		BE4BBDD024D1F75400F0C509 /* CreateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCF24D1F75400F0C509 /* CreateDetailViewController.swift */; };
+		BE8E985324D23AD800E96C64 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E985224D23AD800E96C64 /* Filters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		BE4BBDCA24CFD78500F0C509 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		BE4BBDCD24D14E9700F0C509 /* CreateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE4BBDCF24D1F75400F0C509 /* CreateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailViewController.swift; sourceTree = "<group>"; };
+		BE8E985224D23AD800E96C64 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		BE4BBDC524CFA95300F0C509 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BE8E985224D23AD800E96C64 /* Filters.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				BE4BBD9024CF2E9700F0C509 /* AppDelegate.swift in Sources */,
 				BE4BBDCB24CFD78500F0C509 /* CreateViewController.swift in Sources */,
 				BE4BBD9224CF2E9700F0C509 /* SceneDelegate.swift in Sources */,
+				BE8E985324D23AD800E96C64 /* Filters.swift in Sources */,
 				BE4BBDC824CFA98400F0C509 /* RoundButtons.swift in Sources */,
 				BE4BBD9A24CF2E9700F0C509 /* GIFer.xcdatamodeld in Sources */,
 			);
