@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89647339E1B6A75415C212E1 /* Pods_GIFer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9C881050DCA947E1CBBA4C /* Pods_GIFer.framework */; };
 		BE4BBD9024CF2E9700F0C509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBD8F24CF2E9700F0C509 /* AppDelegate.swift */; };
 		BE4BBD9224CF2E9700F0C509 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBD9124CF2E9700F0C509 /* SceneDelegate.swift */; };
 		BE4BBD9424CF2E9700F0C509 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBD9324CF2E9700F0C509 /* HomeViewController.swift */; };
@@ -21,6 +22,7 @@
 		BE4BBDCE24D14E9700F0C509 /* CreateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCD24D14E9700F0C509 /* CreateCollectionViewCell.swift */; };
 		BE4BBDD024D1F75400F0C509 /* CreateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BBDCF24D1F75400F0C509 /* CreateDetailViewController.swift */; };
 		BE8E985324D23AD800E96C64 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E985224D23AD800E96C64 /* Filters.swift */; };
+		BE8E985524D2664400E96C64 /* LivePhotoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E985424D2664400E96C64 /* LivePhotoConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9195E35BB4A12C6E271E3932 /* Pods-GIFer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFer.release.xcconfig"; path = "Target Support Files/Pods-GIFer/Pods-GIFer.release.xcconfig"; sourceTree = "<group>"; };
+		AD9C881050DCA947E1CBBA4C /* Pods_GIFer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4BBD8C24CF2E9700F0C509 /* GIFer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4BBD8F24CF2E9700F0C509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE4BBD9124CF2E9700F0C509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		BE4BBDCD24D14E9700F0C509 /* CreateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE4BBDCF24D1F75400F0C509 /* CreateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailViewController.swift; sourceTree = "<group>"; };
 		BE8E985224D23AD800E96C64 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		BE8E985424D2664400E96C64 /* LivePhotoConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoConverter.swift; sourceTree = "<group>"; };
+		F9E3EF9E2D91F7404BCDE244 /* Pods-GIFer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFer.debug.xcconfig"; path = "Target Support Files/Pods-GIFer/Pods-GIFer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89647339E1B6A75415C212E1 /* Pods_GIFer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		463EC4154B7CDFD0A239B4C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD9C881050DCA947E1CBBA4C /* Pods_GIFer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FF24497A6E11AFB7CFE0077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9E3EF9E2D91F7404BCDE244 /* Pods-GIFer.debug.xcconfig */,
+				9195E35BB4A12C6E271E3932 /* Pods-GIFer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BE4BBD8324CF2E9700F0C509 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +120,8 @@
 				BE4BBDA824CF2E9900F0C509 /* GIFerTests */,
 				BE4BBDB324CF2E9900F0C509 /* GIFerUITests */,
 				BE4BBD8D24CF2E9700F0C509 /* Products */,
+				6FF24497A6E11AFB7CFE0077 /* Pods */,
+				463EC4154B7CDFD0A239B4C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				BE8E985224D23AD800E96C64 /* Filters.swift */,
+				BE8E985424D2664400E96C64 /* LivePhotoConverter.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -209,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE4BBDB924CF2E9900F0C509 /* Build configuration list for PBXNativeTarget "GIFer" */;
 			buildPhases = (
+				01989889A2688B6B6C1C64A7 /* [CP] Check Pods Manifest.lock */,
 				BE4BBD8824CF2E9700F0C509 /* Sources */,
 				BE4BBD8924CF2E9700F0C509 /* Frameworks */,
 				BE4BBD8A24CF2E9700F0C509 /* Resources */,
+				88B4B7D71826106F6C6CE121 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,6 +358,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01989889A2688B6B6C1C64A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GIFer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88B4B7D71826106F6C6CE121 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIFer/Pods-GIFer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIFer/Pods-GIFer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIFer/Pods-GIFer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE4BBD8824CF2E9700F0C509 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -342,6 +414,7 @@
 				BE8E985324D23AD800E96C64 /* Filters.swift in Sources */,
 				BE4BBDC824CFA98400F0C509 /* RoundButtons.swift in Sources */,
 				BE4BBD9A24CF2E9700F0C509 /* GIFer.xcdatamodeld in Sources */,
+				BE8E985524D2664400E96C64 /* LivePhotoConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +585,7 @@
 		};
 		BE4BBDBA24CF2E9900F0C509 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E3EF9E2D91F7404BCDE244 /* Pods-GIFer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +604,7 @@
 		};
 		BE4BBDBB24CF2E9900F0C509 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9195E35BB4A12C6E271E3932 /* Pods-GIFer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

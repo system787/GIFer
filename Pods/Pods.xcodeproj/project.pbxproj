@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B34169F6B944E8B11B0196D5AE99347 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2CA06AE87B03A3A46387A6B4220D1A56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		740BB3A8B519BDE5FCC18B7B5B02360F /* NSGIF2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AF4EC357505AE25B6BE559A26A83DF /* NSGIF2-dummy.m */; };
+		963BA028E3E0AA7FF09DFD017E5D90D0 /* NSGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 53E5553513F2C910DF645166537ACA17 /* NSGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4D44929CFB103C20B2D6942C046F201 /* Pods-GIFer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B690E33A4DA0E2A729990BCACF68BB /* Pods-GIFer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC1682C7C4E99D941CB3F94BBE4CE4D6 /* Pods-GIFer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B570E7842369EC1BEE3074690480719 /* Pods-GIFer-dummy.m */; };
+		C147FA536C63CC8FADE4A6663A3875E0 /* NSGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18217082255A04FE714DAE271E7CEB5B /* NSGIF.m */; };
+		D9A9089DC9BE2637B7469635555F1C57 /* NSGIF2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A9C4D87C3D1B7D766F22960B272194 /* NSGIF2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0EF58299D5D99F91FD4D5205EDB940A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F174344A9EE5123BD8DECF6F8D4C98AF;
+			remoteInfo = NSGIF2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005EB53ABB3C1763092FAC9FAA423FE1 /* NSGIF2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NSGIF2-Info.plist"; sourceTree = "<group>"; };
+		14C90C8BF005C1C2CEDF31BFB8711B3F /* Pods-GIFer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFer-Info.plist"; sourceTree = "<group>"; };
+		18217082255A04FE714DAE271E7CEB5B /* NSGIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSGIF.m; path = NSGIF/NSGIF.m; sourceTree = "<group>"; };
+		18A9C4D87C3D1B7D766F22960B272194 /* NSGIF2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSGIF2-umbrella.h"; sourceTree = "<group>"; };
+		1BA4D657970CAEE61B630194FC41F381 /* Pods-GIFer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFer-acknowledgements.plist"; sourceTree = "<group>"; };
+		20AC6AB444D80F047CB6BEAD2791F591 /* Pods-GIFer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFer-frameworks.sh"; sourceTree = "<group>"; };
+		2EAD8C392FE31485C3D14DD5047D6055 /* Pods-GIFer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFer.debug.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3633F3D6E347CA0B4C4AC5C0F163E9B2 /* NSGIF2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSGIF2.release.xcconfig; sourceTree = "<group>"; };
+		3B570E7842369EC1BEE3074690480719 /* Pods-GIFer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFer-dummy.m"; sourceTree = "<group>"; };
+		49AF4EC357505AE25B6BE559A26A83DF /* NSGIF2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSGIF2-dummy.m"; sourceTree = "<group>"; };
+		50115BD954DD6DB625D5304D17AFA8D2 /* NSGIF2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NSGIF2.modulemap; sourceTree = "<group>"; };
+		53E5553513F2C910DF645166537ACA17 /* NSGIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSGIF.h; path = NSGIF/NSGIF.h; sourceTree = "<group>"; };
+		6CB228A487A47A764AAF2DB4B8F1BC25 /* Pods_GIFer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GIFer.framework; path = "Pods-GIFer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82315047306AE23232C6159016F66A50 /* NSGIF2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSGIF2-prefix.pch"; sourceTree = "<group>"; };
+		9703F160DBDDBDBADA7B7CFCED1096BF /* NSGIF2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NSGIF2.framework; path = NSGIF2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B55E09CA50180CA82624D5ECD123D74 /* Pods-GIFer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFer.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A27EE4D24EEC35E78839C68D5E83B29F /* Pods-GIFer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B0B690E33A4DA0E2A729990BCACF68BB /* Pods-GIFer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GIFer-umbrella.h"; sourceTree = "<group>"; };
+		B2650CF5D8B6BAB4824F9BE1E05FFC1A /* NSGIF2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSGIF2.debug.xcconfig; sourceTree = "<group>"; };
+		E10759061C25BBDC32547D4894546EBD /* Pods-GIFer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GIFer.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34004F40F03CAF52A8E8100024AAC28B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA06AE87B03A3A46387A6B4220D1A56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBFB228D78CFBAD1C1F0158426C3FC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B34169F6B944E8B11B0196D5AE99347 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41E0DDE2ABF64AA9927EFB0048B194AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				797D8F03F38D0FE1AB43C7D8A44E5C36 /* NSGIF2 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		55AA4DA8F36A1CDD8D9809D17993D43E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				741C252AD5E024282B45918784A15B21 /* Pods-GIFer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6731513057D4AC62418044D97E83FFDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				50115BD954DD6DB625D5304D17AFA8D2 /* NSGIF2.modulemap */,
+				49AF4EC357505AE25B6BE559A26A83DF /* NSGIF2-dummy.m */,
+				005EB53ABB3C1763092FAC9FAA423FE1 /* NSGIF2-Info.plist */,
+				82315047306AE23232C6159016F66A50 /* NSGIF2-prefix.pch */,
+				18A9C4D87C3D1B7D766F22960B272194 /* NSGIF2-umbrella.h */,
+				B2650CF5D8B6BAB4824F9BE1E05FFC1A /* NSGIF2.debug.xcconfig */,
+				3633F3D6E347CA0B4C4AC5C0F163E9B2 /* NSGIF2.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NSGIF2";
+			sourceTree = "<group>";
+		};
+		741C252AD5E024282B45918784A15B21 /* Pods-GIFer */ = {
+			isa = PBXGroup;
+			children = (
+				E10759061C25BBDC32547D4894546EBD /* Pods-GIFer.modulemap */,
+				A27EE4D24EEC35E78839C68D5E83B29F /* Pods-GIFer-acknowledgements.markdown */,
+				1BA4D657970CAEE61B630194FC41F381 /* Pods-GIFer-acknowledgements.plist */,
+				3B570E7842369EC1BEE3074690480719 /* Pods-GIFer-dummy.m */,
+				20AC6AB444D80F047CB6BEAD2791F591 /* Pods-GIFer-frameworks.sh */,
+				14C90C8BF005C1C2CEDF31BFB8711B3F /* Pods-GIFer-Info.plist */,
+				B0B690E33A4DA0E2A729990BCACF68BB /* Pods-GIFer-umbrella.h */,
+				2EAD8C392FE31485C3D14DD5047D6055 /* Pods-GIFer.debug.xcconfig */,
+				9B55E09CA50180CA82624D5ECD123D74 /* Pods-GIFer.release.xcconfig */,
+			);
+			name = "Pods-GIFer";
+			path = "Target Support Files/Pods-GIFer";
+			sourceTree = "<group>";
+		};
+		797D8F03F38D0FE1AB43C7D8A44E5C36 /* NSGIF2 */ = {
+			isa = PBXGroup;
+			children = (
+				53E5553513F2C910DF645166537ACA17 /* NSGIF.h */,
+				18217082255A04FE714DAE271E7CEB5B /* NSGIF.m */,
+				6731513057D4AC62418044D97E83FFDE /* Support Files */,
+			);
+			name = NSGIF2;
+			path = NSGIF2;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				41E0DDE2ABF64AA9927EFB0048B194AD /* Pods */,
+				E8F3487E738366140E4ED5062CA447CB /* Products */,
+				55AA4DA8F36A1CDD8D9809D17993D43E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8F3487E738366140E4ED5062CA447CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9703F160DBDDBDBADA7B7CFCED1096BF /* NSGIF2.framework */,
+				6CB228A487A47A764AAF2DB4B8F1BC25 /* Pods_GIFer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7410C37F418771E9E3D6C21B69ED9A55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D44929CFB103C20B2D6942C046F201 /* Pods-GIFer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE53A27C821E7BB18BE054B0D47DA36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963BA028E3E0AA7FF09DFD017E5D90D0 /* NSGIF.h in Headers */,
+				D9A9089DC9BE2637B7469635555F1C57 /* NSGIF2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8E1E7941D600DEA01F59D6D878BE449D /* Pods-GIFer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B0FB09FCAA0061ED66D160B3585AAE4 /* Build configuration list for PBXNativeTarget "Pods-GIFer" */;
+			buildPhases = (
+				7410C37F418771E9E3D6C21B69ED9A55 /* Headers */,
+				2ADF27FF41A25A72D19035658329D36E /* Sources */,
+				ADBFB228D78CFBAD1C1F0158426C3FC2 /* Frameworks */,
+				6F0EF1D37D4D3B132AFE4453755E2639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB4DB701EF9A92AA60198FA8651B075F /* PBXTargetDependency */,
+			);
+			name = "Pods-GIFer";
+			productName = "Pods-GIFer";
+			productReference = 6CB228A487A47A764AAF2DB4B8F1BC25 /* Pods_GIFer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F174344A9EE5123BD8DECF6F8D4C98AF /* NSGIF2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A7745B184A6CDCB89D4ECA91F401A72 /* Build configuration list for PBXNativeTarget "NSGIF2" */;
+			buildPhases = (
+				BEE53A27C821E7BB18BE054B0D47DA36 /* Headers */,
+				5673F1D2FAAFE46417961BEFCFE024D2 /* Sources */,
+				34004F40F03CAF52A8E8100024AAC28B /* Frameworks */,
+				17CE14BC2F7FF47BE0E7657C18702535 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSGIF2;
+			productName = NSGIF2;
+			productReference = 9703F160DBDDBDBADA7B7CFCED1096BF /* NSGIF2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E8F3487E738366140E4ED5062CA447CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F174344A9EE5123BD8DECF6F8D4C98AF /* NSGIF2 */,
+				8E1E7941D600DEA01F59D6D878BE449D /* Pods-GIFer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17CE14BC2F7FF47BE0E7657C18702535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0EF1D37D4D3B132AFE4453755E2639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ADF27FF41A25A72D19035658329D36E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1682C7C4E99D941CB3F94BBE4CE4D6 /* Pods-GIFer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5673F1D2FAAFE46417961BEFCFE024D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C147FA536C63CC8FADE4A6663A3875E0 /* NSGIF.m in Sources */,
+				740BB3A8B519BDE5FCC18B7B5B02360F /* NSGIF2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB4DB701EF9A92AA60198FA8651B075F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NSGIF2;
+			target = F174344A9EE5123BD8DECF6F8D4C98AF /* NSGIF2 */;
+			targetProxy = B0EF58299D5D99F91FD4D5205EDB940A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		28E74E8B1DDC84E5831C925B22E28AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B55E09CA50180CA82624D5ECD123D74 /* Pods-GIFer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GIFer/Pods-GIFer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GIFer/Pods-GIFer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FA87F8786EA814CBFBD3AE682D0C822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2650CF5D8B6BAB4824F9BE1E05FFC1A /* NSGIF2.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NSGIF2/NSGIF2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NSGIF2/NSGIF2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NSGIF2/NSGIF2.modulemap";
+				PRODUCT_MODULE_NAME = NSGIF2;
+				PRODUCT_NAME = NSGIF2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		871B6E28ABA34DAE69824AB9D22D3B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A93C6F943A6E963DF577E2E9A1F49D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EAD8C392FE31485C3D14DD5047D6055 /* Pods-GIFer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GIFer/Pods-GIFer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GIFer/Pods-GIFer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C30514F83FA335C15E6A4C0EFF8C8423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3633F3D6E347CA0B4C4AC5C0F163E9B2 /* NSGIF2.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NSGIF2/NSGIF2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NSGIF2/NSGIF2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NSGIF2/NSGIF2.modulemap";
+				PRODUCT_MODULE_NAME = NSGIF2;
+				PRODUCT_NAME = NSGIF2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */,
+				871B6E28ABA34DAE69824AB9D22D3B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B0FB09FCAA0061ED66D160B3585AAE4 /* Build configuration list for PBXNativeTarget "Pods-GIFer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A93C6F943A6E963DF577E2E9A1F49D14 /* Debug */,
+				28E74E8B1DDC84E5831C925B22E28AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A7745B184A6CDCB89D4ECA91F401A72 /* Build configuration list for PBXNativeTarget "NSGIF2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA87F8786EA814CBFBD3AE682D0C822 /* Debug */,
+				C30514F83FA335C15E6A4C0EFF8C8423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -10,11 +10,23 @@ import UIKit
 import Photos
 import PhotosUI
 
-class CreateDetailViewController: UIViewController {
-
+class CreateDetailViewController: UIViewController, LivePhotoConverterDelegate {
+    
+    let converter = LivePhotoConverter.shared
+    
     var livePhoto: PHLivePhoto? {
         didSet {
             setUpView()
+        }
+    }
+    
+    
+    // MARK: - LivePhotoConverterDelegate
+    func videoToGIFComplete(_ url: URL) {
+        let alert = generateAlert(alertTitle: "Complete", alertMessage: "GIF creation complete.", actionTitle: "Done")
+        
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
@@ -23,42 +35,39 @@ class CreateDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        converter.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         let screenWidth = UIScreen.main.bounds.width
         
-        let rect = CGRect(x: 0, y: 0, width: screenWidth, height: ((screenWidth * 3.0)/4.0))
+        let rect = CGRect(x: 0, y: 10.0, width: screenWidth, height: ((screenWidth * 3.0)/4.0))
         let livePhotoView = PHLivePhotoView.init(frame: rect)
         livePhotoView.livePhoto = livePhoto
-        livePhotoView.contentMode = .scaleAspectFill
-
+        livePhotoView.contentMode = .scaleAspectFit
         
         livePhotoView.startPlayback(with: .full)
         
         photoImageView = UIView(frame: rect)
-        photoImageView.contentMode = .scaleToFill
+        photoImageView.contentMode = .scaleAspectFit
         photoImageView.addSubview(livePhotoView)
         
         view.addSubview(photoImageView)
     }
     
-    
+    // MARK: - Utility
     private func setUpView() {
         if let _ = livePhoto {
             viewWillAppear(true)
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    private func generateAlert(alertTitle: String, alertMessage: String, actionTitle: String) -> UIAlertController {
+        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: actionTitle, style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        return alertController
     }
-    */
-
 }

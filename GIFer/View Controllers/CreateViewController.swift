@@ -81,9 +81,6 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
                                         let livePhotoView = PHLivePhotoView.init(frame: self.photoImageView.bounds)
                                         livePhotoView.livePhoto = self.livePhoto
                                         
-                                        print("Width \(self.photoImageView.bounds.width)")
-                                        print("Height \(self.photoImageView.bounds.height)")
-                                        
                                         livePhotoView.contentMode = .scaleAspectFill
                                         livePhotoView.isMuted = false
                                         
@@ -105,10 +102,6 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let selectedAsset = fetchResults.object(at: indexPath.item)
-//        DispatchQueue.global(qos: .userInteractive).async {
-//            self.getAssetThumbnail(selectedAsset, for: cell as! CreateCollectionViewCell)
-//        }
-        
         getAssetThumbnail(selectedAsset, for: cell as! CreateCollectionViewCell)
     }
     

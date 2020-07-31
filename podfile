@@ -1,0 +1,4 @@
+target 'GIFer' do
+    use_frameworks!
+    pod 'NSGIF2'
+end
