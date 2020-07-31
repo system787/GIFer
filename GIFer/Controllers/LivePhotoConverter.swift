@@ -9,13 +9,13 @@
 import Foundation
 import Photos
 import NSGIF2
+import Accelerate
 
 protocol LivePhotoConverterDelegate {
     func videoToGIFComplete(_ url: URL?)
 }
 
 class LivePhotoConverter {
-    
     typealias LivePhotoContents = (photo: URL, video: URL)
     
     static let DOMAIN_NAME = "com.vincenthoang.GIFer"
@@ -56,55 +56,69 @@ class LivePhotoConverter {
         }
     }
     
-    private func convertVideoToGIF(videoURL: URL) {
-        NSGIF.create(NSGIFRequest(sourceVideo: videoURL), completion: { gifURL in
-            self.delegate?.videoToGIFComplete(gifURL)
+    func convertVideoToGIF(videoURL: URL) {
+
+//        NSGIF.create(NSGIFRequest(sourceVideo: videoURL.absoluteURL), completion: { result in
+//            if let url = result {
+//                self.delegate?.videoToGIFComplete(url)
+//            }
+//        })
+        
+        print("videoURL: \(videoURL.absoluteString)")
+        
+        let request = NSGIFRequest(sourceVideoForLivePhoto: videoURL)
+        request.sourceVideoFile = videoURL
+        
+        NSGIF.create(request, completion: { result in
+            print(result?.absoluteString ?? "Test")
         })
     }
     
     // MARK: - Private Functions
     private func getContents(from livePhoto: PHLivePhoto, to directoryURL: URL, completion: @escaping (LivePhotoContents?) -> Void) {
         let resources = PHAssetResource.assetResources(for: livePhoto)
-        var livePhotoImageURL: URL?
-        var livePhotoVideoURL: URL?
+        var keyPhotoURL: URL?
+        var videoURL: URL?
         
         let dispatchGroup = DispatchGroup()
         
-        let requestOptions = PHAssetResourceRequestOptions()
-        requestOptions.isNetworkAccessAllowed = true
-        
         for resource in resources {
             let buffer = NSMutableData()
+            let requestOptions = PHAssetResourceRequestOptions()
+            requestOptions.isNetworkAccessAllowed = true
             
             dispatchGroup.enter()
             PHAssetResourceManager.default().requestData(for: resource,
                                                          options: requestOptions,
-                                                         dataReceivedHandler: { data in buffer.append(data) },
-                                                         completionHandler: { error in
+                                                         dataReceivedHandler: { data in buffer.append(data) }) { error in
                                                             if error == nil {
                                                                 if resource.type == .pairedVideo {
-                                                                    livePhotoVideoURL = self.saveAsset(resource: resource, to: directoryURL, data: buffer as Data)
+                                                                    videoURL = self.saveAsset(resource: resource, to: directoryURL, data: buffer as Data)
                                                                 } else {
-                                                                    livePhotoImageURL = self.saveAsset(resource: resource, to: directoryURL, data: buffer as Data)
+                                                                    keyPhotoURL = self.saveAsset(resource: resource, to: directoryURL, data: buffer as Data)
                                                                 }
                                                             } else {
                                                                 NSLog("\(error ?? NSError())")
                                                             }
-            })
-            dispatchGroup.leave()
+                                                            dispatchGroup.leave()
+            }
         }
+        
         dispatchGroup.notify(queue: DispatchQueue.main) {
-            guard let photoURL = livePhotoImageURL, let videoURL = livePhotoVideoURL else {
+            guard let pairedPhotoURL = keyPhotoURL, let pairedVideoURL = videoURL else {
+                NSLog("photoURL and videoURL were found to be nil")
                 completion(nil)
                 return
             }
-            completion((photoURL, videoURL))
+            completion((pairedPhotoURL, pairedVideoURL))
         }
     }
     
     private func getContents(from livePhoto: PHLivePhoto, completion: @escaping (LivePhotoContents?) -> Void) {
         if let cache = cacheURL {
             getContents(from: livePhoto, to: cache, completion: completion)
+        } else {
+            NSLog("Cache invalid")
         }
     }
     

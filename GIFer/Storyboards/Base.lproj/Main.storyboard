@@ -191,17 +191,45 @@
                                     <constraint firstAttribute="width" secondItem="KAE-pP-pGV" secondAttribute="height" multiplier="4:3" id="Anz-sr-7tW"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsR-P7-D9n" userLabel="Create">
+                                <rect key="frame" x="127.66666666666669" y="634" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Le5-M9-qlE"/>
+                                    <constraint firstAttribute="width" constant="120" id="pvF-Su-GWp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createButtonPressed:" destination="55L-Yg-rm5" eventType="touchUpInside" id="w1e-2n-5pJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KAE-pP-pGV" secondAttribute="trailing" id="4dj-eS-U40"/>
+                            <constraint firstItem="AoN-06-syp" firstAttribute="bottom" secondItem="JsR-P7-D9n" secondAttribute="bottom" constant="40" id="80r-6k-Nwl"/>
                             <constraint firstItem="KAE-pP-pGV" firstAttribute="top" secondItem="or6-09-tZY" secondAttribute="top" constant="35" id="ngi-Gb-0jm"/>
+                            <constraint firstItem="JsR-P7-D9n" firstAttribute="centerX" secondItem="or6-09-tZY" secondAttribute="centerX" id="q2e-OF-Gfg"/>
                             <constraint firstItem="KAE-pP-pGV" firstAttribute="leading" secondItem="or6-09-tZY" secondAttribute="leading" id="qsd-Sv-9a5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AoN-06-syp"/>
                     </view>
                     <navigationItem key="navigationItem" id="cf0-Be-iF5"/>
                     <connections>
+                        <outlet property="createButton" destination="JsR-P7-D9n" id="Qjz-n8-GO3"/>
                         <outlet property="photoImageView" destination="KAE-pP-pGV" id="x1i-ax-c7z"/>
                     </connections>
                 </viewController>

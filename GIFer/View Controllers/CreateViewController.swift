@@ -20,6 +20,8 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet weak var usePhotoButton: UIBarButtonItem!
     
     var livePhoto: PHLivePhoto?
+    var asset: PHAsset?
+    
     var imagePicker = UIImagePickerController()
     
     var images: [PHLivePhoto] = []
@@ -43,6 +45,7 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
         let library = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .smartAlbumLivePhotos, options: nil).firstObject
         
         fetchResults = PHAsset.fetchAssets(in: library!, options: fetchOptions)
+        
     }
     
     private func getAssetThumbnail(_ asset: PHAsset, for cell: CreateCollectionViewCell) {
@@ -63,7 +66,18 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     private func getAssetLarge(_ asset: PHAsset) {
         let options = PHLivePhotoRequestOptions()
+        options.isNetworkAccessAllowed = true
+        options.version = .original
+        
         let manager = PHImageManager.default()
+ 
+// Debugging block
+//        print(asset.localIdentifier)
+//        let assetDetails = PHAssetResource.assetResources(for: asset)
+//        for assets in assetDetails {
+//            print(assets.originalFilename)
+//            print(assets.assetLocalIdentifier)
+//        }
         
         manager.requestLivePhoto(for: asset,
                                  targetSize: CGSize(width: asset.pixelWidth, height: asset.pixelHeight),
@@ -77,6 +91,7 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
                                         }
                                         
                                         self.livePhoto = result
+                                        self.asset = asset
                                         
                                         let livePhotoView = PHLivePhotoView.init(frame: self.photoImageView.bounds)
                                         livePhotoView.livePhoto = self.livePhoto
@@ -138,6 +153,7 @@ class CreateViewController: UIViewController, UICollectionViewDataSource, UIColl
             }
             
             vc.livePhoto = self.livePhoto
+            vc.asset = self.asset
         }
     }
     

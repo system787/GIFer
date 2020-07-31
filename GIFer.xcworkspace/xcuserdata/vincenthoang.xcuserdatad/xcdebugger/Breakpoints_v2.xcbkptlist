@@ -3,4 +3,198 @@
    uuid = "FC1ABB73-9E09-4103-B600-5EA4CDE8FC7D"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0D22EA4-A186-4593-BE61-7FD1D31170BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/View Controllers/CreateDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "convertLivePhoto(livePhoto:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C0D22EA4-A186-4593-BE61-7FD1D31170BC - a2cd618a4e56392c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GIFer.CreateDetailViewController.(convertLivePhoto in _A0D541990F8AE18388A4766AD40F9F53)(livePhoto: __C.PHLivePhoto) -&gt; ()"
+                  moduleName = "GIFer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/GIFer/View%20Controllers/CreateDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "C0D22EA4-A186-4593-BE61-7FD1D31170BC - 3d3c0a05f7ad423d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;(photo: Foundation.URL, video: Foundation.URL)&gt;) -&gt; () in GIFer.CreateDetailViewController.(convertLivePhoto in _A0D541990F8AE18388A4766AD40F9F53)(livePhoto: __C.PHLivePhoto) -&gt; ()"
+                  moduleName = "GIFer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/GIFer/View%20Controllers/CreateDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "324">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25853B87-7647-4483-AFC2-67EE54B09255"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/Controllers/LivePhotoConverter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "getContents(from:to:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D51779C-F3A9-4924-AED3-2552B4D0379A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/View Controllers/CreateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "getAssetLarge(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0BD8C54-DC7E-4B80-B5E7-2EA6FF706FE3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/NSGIF2/NSGIF/NSGIF.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "+createGIFforTimePoints:fromURL:toURL:fileProperties:frameProperties:frameCount:outputScale:progress:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B0BD8C54-DC7E-4B80-B5E7-2EA6FF706FE3 - cbd2cf47c23ff99d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[NSGIF createGIFforTimePoints:fromURL:toURL:fileProperties:frameProperties:frameCount:outputScale:progress:]"
+                  moduleName = "NSGIF2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/Pods/NSGIF2/NSGIF/NSGIF.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "246"
+                  endingLineNumber = "246"
+                  offsetFromSymbolStart = "2948">
+               </Location>
+               <Location
+                  uuid = "B0BD8C54-DC7E-4B80-B5E7-2EA6FF706FE3 - cbd2cf47c23ff99d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[NSGIF createGIFforTimePoints:fromURL:toURL:fileProperties:frameProperties:frameCount:outputScale:progress:]"
+                  moduleName = "NSGIF2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincenthoang/Documents/LS/GIFer/Pods/NSGIF2/NSGIF/NSGIF.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "246"
+                  endingLineNumber = "246"
+                  offsetFromSymbolStart = "3012">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F4E62E8-7562-46E1-9F88-A6870AB58C79"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/Controllers/LivePhotoConverter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "getContents(from:to:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "157C32A3-1A6D-4072-B765-1476EEFA81F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/Controllers/LivePhotoConverter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "getContents(from:to:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF1F0C65-A4A1-4B03-AC26-C8ED24620ABF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/Controllers/LivePhotoConverter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "getContents(from:to:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E9AAAE4-F155-4A38-A988-822B86F72FD8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GIFer/Controllers/LivePhotoConverter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "getContents(from:to:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
