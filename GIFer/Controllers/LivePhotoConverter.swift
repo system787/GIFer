@@ -11,7 +11,7 @@ import Photos
 import NSGIF2
 
 protocol LivePhotoConverterDelegate {
-    func videoToGIFComplete(_ url: URL)
+    func videoToGIFComplete(_ url: URL?)
 }
 
 class LivePhotoConverter {
@@ -46,7 +46,7 @@ class LivePhotoConverter {
     }
     
     deinit {
-        // TODO
+        clearCache()
     }
     
     // MARK: - Public Functions
@@ -56,32 +56,13 @@ class LivePhotoConverter {
         }
     }
     
+    private func convertVideoToGIF(videoURL: URL) {
+        NSGIF.create(NSGIFRequest(sourceVideo: videoURL), completion: { gifURL in
+            self.delegate?.videoToGIFComplete(gifURL)
+        })
+    }
     
     // MARK: - Private Functions
-    
-    /*
-        Step 1 - Convert LivePhoto to Video (.MOV)
-     */
-    private func convertLivePhotoToGIF(livePhoto: PHLivePhoto) {
-        
-    }
-    
-    private func extractVideo(from livePhoto: PHLivePhoto, to directoryURL: URL, completion: @escaping (LivePhotoContents?) -> Void) {
-        
-    }
-    
-    /*
-        Step 2 - Convert Video (.MOV) to GIF
-     */
-    private func convertVideoToGIF(fileName: String) {
-        let videoURL = URL(fileURLWithPath: "\(fileName).MOV", relativeTo: getDocumentsDirectory())
-        
-        NSGIF.create(NSGIFRequest(sourceVideo: videoURL), completion: { url in
-                //gifURL is set to nil if failed or stopped
-        })
-        
-    }
-    
     private func getContents(from livePhoto: PHLivePhoto, to directoryURL: URL, completion: @escaping (LivePhotoContents?) -> Void) {
         let resources = PHAssetResource.assetResources(for: livePhoto)
         var livePhotoImageURL: URL?
@@ -152,6 +133,12 @@ class LivePhotoConverter {
         }
         
         return fileURL
+    }
+    
+    private func clearCache() {
+        if let cache = cacheURL {
+            try? FileManager.default.removeItem(at: cache)
+        }
     }
     
 }

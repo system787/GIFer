@@ -22,12 +22,10 @@ class CreateDetailViewController: UIViewController, LivePhotoConverterDelegate {
     
     
     // MARK: - LivePhotoConverterDelegate
-    func videoToGIFComplete(_ url: URL) {
+    func videoToGIFComplete(_ url: URL?) {
         let alert = generateAlert(alertTitle: "Complete", alertMessage: "GIF creation complete.", actionTitle: "Done")
         
-        DispatchQueue.main.async {
-            self.present(alert, animated: true, completion: nil)
-        }
+        present(alert, animated: true, completion: nil)
     }
     
     // MARK: - IBOutlets
